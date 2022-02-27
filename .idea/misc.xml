@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/back_green.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/back_white.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/ic_green_bac.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/ic_spin_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/ic_white_dash.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/ic_yello_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/pointer.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/rectangle_blue.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/rectangle_green.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/drawable/spin_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/activity_claim.xml" value="0.33" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/activity_custom_dialog.xml" value="0.32653985507246375" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/activity_main.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/activity_splash.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/activity_wallet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/app_bar_main.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/content_main.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/Ali/AndroidStudioProjects/CryptoSpin/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

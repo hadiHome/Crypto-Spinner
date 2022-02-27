@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".WalletActivity">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+
+        ads:adSize="BANNER"
+        android:layout_marginTop="5sp"
+
+
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/adView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/spin_go"></ImageView>
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/adView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/your_wallet"></ImageView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/im"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:weightSum="4"
+
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_title_back">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+
+                android:elevation="20dp"
+                android:textSize="18dp"
+
+                android:text="Coin/Token"
+                android:textAlignment="center"
+                android:fontFamily="@font/acumin_bdpro"
+                android:textColor="#fff"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+
+                android:elevation="20dp"
+                android:textSize="20dp"
+                android:text="Network"
+                android:textAlignment="center"
+                android:fontFamily="@font/acumin_bdpro"
+                android:textColor="#fff"></TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1.25"
+
+                android:elevation="20dp"
+                android:fontFamily="@font/acumin_bdpro"
+                android:text="QTY"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/acumin_bdpro"
+            android:text="Redeem"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#F3E539"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/one"
+        android:layout_below="@id/title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_polc_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:text="POLC"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/polcCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/20"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/polcClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:layout_marginStart="5dp"
+            android:text="POLC"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/one"
+        android:id="@+id/two"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_usdt_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="USDT"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/usdtCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/10"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/usdtClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+         android:enabled="false"
+            android:layout_marginStart="5dp"
+            android:text="USDT"
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/two"
+        android:id="@+id/three"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_dodge_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="DOGE"
+                    android:textColor="#344763"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dodgeCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/30"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dodgeClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:text="DODGE"
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/four"
+        android:layout_below="@id/three"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_ada_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="ADA"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/adaCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/10"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adaClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:text="ADA"
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/five"
+        android:layout_below="@id/four"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_ala_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="ALU"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/aluCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/50"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/aluClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:text="ALU"
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/six"
+        android:layout_below="@id/five"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_xrp_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="XRP"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/xrpCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/10"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/xrpClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:text="XRP"
+            android:textSize="20dp"
+            android:textColor="@color/purple_500"
+
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/seven"
+        android:layout_below="@id/six"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/back_green"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:src="@drawable/ic_ftm_icon"></ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="FTM"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.25"
+                 android:fontFamily="@font/acumin_bdpro"
+                android:text="BEP20"
+                android:textAlignment="center"
+                android:textColor="#344763"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.25"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ftmCredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1.25"
+                     android:fontFamily="@font/acumin_bdpro"
+                    android:text="/5"
+                    android:textAlignment="textStart"
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ftmClaim"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginStart="5dp"
+            android:text="FTM"
+            android:textSize="20dp"
+             android:fontFamily="@font/acumin_bdpro"
+            android:layout_weight="1"
+            android:background="@drawable/ic_green_bac"></androidx.appcompat.widget.AppCompatButton>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

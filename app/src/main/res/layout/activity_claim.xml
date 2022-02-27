@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Claim">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+
+        ads:adSize="BANNER"
+        android:layout_marginTop="5sp"
+
+
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/spin"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/adView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/spin_go"></ImageView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/adView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/test"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ensure that the network is BEP20
+\nor assets may be lost"
+android:textColor="@color/white"
+        android:fontFamily="@font/acumin_bdpro"
+        android:textAlignment="center"
+        android:layout_below="@id/spin"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:id="@+id/rel"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/back_white"
+
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:background="@drawable/back_green"
+
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/acumin_bdpro"
+                    android:text="Address"
+                    android:textAlignment="center"
+
+                    android:textColor="#344763"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="0dp"
+                android:id="@+id/address"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                android:background="@null"
+                android:textColorHint="#9a9a9a"
+                android:gravity="center"
+                android:fontFamily="@font/acumin_bdpro"
+                android:hint="PASTE YOUR ADRESS HERE"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="#344763"
+                android:textSize="15dp"
+                android:textStyle="bold"></EditText>
+
+
+
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/claim"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/ic_spin_button"
+        android:fontFamily="@font/acumin_bdpro"
+        android:text="Claim"
+        android:textColor="#344763"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBS: THE TRANSACTION WILL BE DONE\nWITHIN 24 HOURS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/acumin_bdpro"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+></TextView>
+
+</RelativeLayout>

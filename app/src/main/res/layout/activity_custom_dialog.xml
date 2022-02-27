@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="40dp"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:textDirection="anyRtl"
+        android:textSize="30sp"
+        android:text="The draw is in the last Saturday of every month, follow us on Facebook page and subscribe our YouTube channel for results Live."
+        tools:ignore="RtlCompat"></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="200dp"
+        ></ImageView>
+
+
+</LinearLayout>
